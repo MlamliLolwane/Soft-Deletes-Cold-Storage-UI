@@ -1,22 +1,24 @@
+import { NavLink } from "react-router";
+
 function Navbar() {
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">SOFT DELETES</a>
+                    <NavLink className="navbar-brand" to="/">SOFT DELETES</NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#">Home <i className="bi bi-house-fill"></i></a>
+                                <NavLink className="nav-link" aria-current="page" to="/">Home <i className="bi bi-house-fill"></i></NavLink>
                             </li>
                             <li className="nav-item px-lg-5">
-                                <a className="nav-link" href="#">About <i class="bi bi-info-circle-fill"></i></a>
+                                <NavLink className="nav-link" to="/about">About <i class="bi bi-info-circle-fill"></i></NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Contact <i class="bi bi-telephone-fill"></i></a>
+                                <NavLink className="nav-link" to="/contact">Contact <i class="bi bi-telephone-fill"></i></NavLink>
                             </li>
                         </ul>
                         <ul className="navbar-nav d-flex">
