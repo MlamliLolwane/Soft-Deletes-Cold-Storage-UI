@@ -46,9 +46,6 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -65,4 +62,26 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.btn-primary{
+  background-color: orangered !important;
+  border-radius: 0%;
+  border-color: transparent;
+}
+
+.btn-primary:hover{
+  border-radius: 0%;
+  border-color: grey;
+}
+
+.btn-secondary{
+  background-color: grey !important;
+  border-radius: 0%;
+  border-color: transparent;
+}
+
+main{
+  min-height: 100vh;
+  margin-left: 250px;
 }
