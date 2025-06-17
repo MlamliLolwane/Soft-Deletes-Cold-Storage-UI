@@ -24,19 +24,6 @@ function Navbar() {
                             </li>
                         </ul>
                         <ul className="navbar-nav d-flex">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Settings <i className="bi bi-moon-stars-fill"></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><button type="button" className="dropdown-item nav-link"
-                                        onClick={() => handleSelect('light')}>Light <i className="bi bi-sun-fill"></i></button></li>
-                                    <li><button type="button" className="dropdown-item nav-link"
-                                        onClick={() => handleSelect('dark')}> Dark <i className="bi bi-moon-stars-fill"></i></button></li>
-                                    <li><button type="button" className="dropdown-item nav-link"
-                                        onClick={() => handleSelect('system')}> System <i className="bi bi-moon-stars-fill"></i></button></li>
-                                </ul>
-                            </li>
                             <li className="nav-item">
                                 <button type="button" className="nav-link" data-bs-toggle="modal"
                                     data-bs-target="#loginModal"
