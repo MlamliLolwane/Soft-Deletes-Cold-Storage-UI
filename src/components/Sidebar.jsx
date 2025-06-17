@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 function Sidebar() {
     return (
         <div
-            className="border-end vh-100 position-fixed"
+            className="border-end vh-100 position-fixed d-none d-lg-block"
             style={{ width: '250px' }}
         >
             <div className="p-3">
