@@ -20,14 +20,6 @@ function AuthenticatedNavbar() {
                                 <NavLink className="nav-link" to="/authenticated/contact">Contact <i class="bi bi-telephone-fill"></i></NavLink>
                             </li>
                         </ul>
-                        <ul className="navbar-nav d-flex">
-                            <li className="nav-item">
-                                <button type="button" className="nav-link" data-bs-toggle="modal"
-                                    data-bs-target="#loginModal"
-                                    aria-current="page">Logout <i className="bi bi-person-circle"></i>
-                                </button>
-                            </li>
-                        </ul>
                         <ul className="navbar-nav d-lg-none border-top mt-2">
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/authenticated/active">
