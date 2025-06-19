@@ -2,9 +2,12 @@ import AuthenticatedNavbar from '../../components/AuthenticatedNavbar';
 import Sidebar from '../../components/Sidebar';
 import { useEffect, useState } from 'react';
 import apiClient from '../../api/axios';
+import { useNavigate } from 'react-router';
 
 function Archive() {
     const [data, setData] = useState([]);
+    const navigate = useNavigate();
+    
     useEffect(() => {
         fetchData();
     }, [])
@@ -18,6 +21,14 @@ function Archive() {
     async function restoreTask(id) {
         await apiClient.delete(`/api/archived-task/restore/${id}`);
         fetchData();
+    }
+
+    function viewTask(data) {
+        navigate('/authenticated/archived-task-details', {
+            state: {
+                data
+            },
+        });
     }
 
     return (
