@@ -8,22 +8,31 @@ function AuthenticatedAbout() {
             <div className="d-flex">
                 <Sidebar />
                 <main className="flex-grow-1 ms-250 p-4">
-                    <div className="border mx-lg-5 mb-5 mt-4 p-4">
+                    <div className="border m-5 p-4">
                         <h4>About</h4>
                         <p className="fw-lighter">
-                            This is a demo project showcasing the implementation of soft deletes based on
-                            "This article".
-
-                            This project was inspired by a tweet from "Nuno Maduro" so I thought I would
-                            showcase my take
-                            on the topic.
-
-                            <br /> <br />
-                            Technologies used.
-
-                            <br /> <br />
-                            Source Code
+                            This project is a simple to do application where by users can create a to do item by inputing the
+                            title of the task they have to complete and then add a description as well. Then users can mark the
+                            status of the task (Complete / Cancelled).
                         </p>
+                        <h6>Technologies Used</h6>
+                        <p className="fw-lighter">
+                            This project is made up of 2 "sub-projects", a backend built with Laravel 12 and a frontend built with
+                            ReactJS. The database used for the project is MySQL. The backend is hosted on a Google Cloud Engine instance
+                            while the frontend is hosted on Versel.
+                        </p>
+
+                        <p className='fw-lighter'>
+                            Code for both projects can be found on the following links: <br />
+                            <u><a href='#' className="fw-lighter">Laravel Backend</a></u> and <u><a href='#' className="fw-lighter">ReactJS Frontend</a></u>
+                        </p>
+
+                        <h6>Entity Relationship Diagram</h6>
+                        <p className='fw-lighter'>
+                            Below is an ERD of the application showcasing the app's database schema. A code first approach
+                            was used for building the application.
+                        </p>
+                        <img src="\public\IMG-20241105-WA0058.jpg" className="img-fluid" alt="Entity Relationship Diagram"></img>
                     </div>
                 </main>
             </div>

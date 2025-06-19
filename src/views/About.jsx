@@ -23,6 +23,13 @@ function About() {
                         Code for both projects can be found on the following links: <br />
                         <u><a href='#' className="fw-lighter">Laravel Backend</a></u> and <u><a href='#' className="fw-lighter">ReactJS Frontend</a></u>
                     </p>
+
+                    <h6>Entity Relationship Diagram</h6>
+                    <p className='fw-lighter'>
+                        Below is an ERD of the application showcasing the app's database schema. A code first approach
+                        was used for building the application.
+                    </p>
+                    <img src="public\IMG-20241105-WA0058.jpg" className="img-fluid" alt="Entity Relationship Diagram"></img>
                 </div>
             </main>
         </>
