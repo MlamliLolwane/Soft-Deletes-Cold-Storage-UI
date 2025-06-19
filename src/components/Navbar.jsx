@@ -30,7 +30,6 @@ function Navbar() {
                                     aria-current="page">Login <i className="bi bi-person-circle"></i>
                                 </button>
                             </li>
-
                         </ul>
                     </div>
                 </div>

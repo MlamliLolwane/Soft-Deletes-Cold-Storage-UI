@@ -20,6 +20,12 @@ function AuthenticatedNavbar() {
                                 <NavLink className="nav-link" to="/authenticated/contact">Contact <i class="bi bi-telephone-fill"></i></NavLink>
                             </li>
                         </ul>
+                        <ul className="navbar-nav d-flex">
+                            <li className="nav-item">
+                                <NavLink to="/" className="nav-link">Logout <i className="bi bi-person-circle"></i>
+                                </NavLink>
+                            </li>
+                        </ul>
                         <ul className="navbar-nav d-lg-none border-top mt-2">
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/authenticated/active">
