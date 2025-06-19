@@ -2,9 +2,12 @@ import AuthenticatedNavbar from '../../components/AuthenticatedNavbar';
 import Sidebar from '../../components/Sidebar';
 import { useEffect, useState } from 'react';
 import apiClient from '../../api/axios';
+import { useNavigate } from 'react-router';
 
 function Trash() {
     const [data, setData] = useState([]);
+    const navigate = useNavigate();
+
     useEffect(() => {
         fetchData();
     }, [])
@@ -23,6 +26,14 @@ function Trash() {
     async function archiveTask(id) {
         await apiClient.delete(`/api/task/permanent/delete/${id}`);
         fetchData();
+    }
+
+    function viewTask(data) {
+        navigate('/authenticated/trashed-task-details', {
+            state: {
+                data
+            },
+        });
     }
 
     return (
