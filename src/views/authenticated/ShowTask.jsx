@@ -1,10 +1,11 @@
 import AuthenticatedNavbar from "../../components/AuthenticatedNavbar";
 import Sidebar from "../../components/Sidebar";
-import { useLocation } from "react-router";
+import { useLocation, useNavigate } from "react-router";
+import apiClient from "../../api/axios";
 
 function ShowTask() {
     const location = useLocation();
-
+    const navigate = useNavigate();
     const task = location.state.data || {};
 
     async function handleSubmit(e, status) {
@@ -37,11 +38,12 @@ function ShowTask() {
 
                     <h5>{task.task_title}</h5>
                     <p className="fw-lighter">{task.task_definition}</p>
+                    <p className="fw-lighter">Status: {task.status.status_code}</p>
 
                     <div>
-                        <button type="submit" onClick={(e) => handleSubmit(e, 3)} className="btn btn-secondary">
+                        <button type="button" onClick={(e) => handleSubmit(e, 3)} className="btn btn-secondary">
                             Cancel Task</button>
-                        <button type="submit" onClick={(e) => handleSubmit(e, 2)} className="btn btn-primary ms-3">
+                        <button type="button" onClick={(e) => handleSubmit(e, 2)} className="btn btn-primary ms-3">
                             Complete Task</button>
                     </div>
                 </div>
