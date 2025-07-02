@@ -21,7 +21,8 @@ function About() {
 
                     <p className='fw-lighter'>
                         Code for both projects can be found on the following links: <br />
-                        <u><a href='#' className="fw-lighter">Laravel Backend</a></u> and <u><a href='#' className="fw-lighter">ReactJS Frontend</a></u>
+                        <u><a href='https://github.com/MlamliLolwane/Soft-Deletes-Cold-Storage-API' target="_blank" className="fw-lighter">Laravel Backend</a></u> and <u>
+                            <a href='https://github.com/MlamliLolwane/Soft-Deletes-Cold-Storage-UI' target="_blank" className="fw-lighter">ReactJS Frontend</a></u>
                     </p>
 
                     <h6>Entity Relationship Diagram</h6>
