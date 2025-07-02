@@ -32,7 +32,7 @@ function AuthenticatedAbout() {
                             Below is an ERD of the application showcasing the app's database schema. A code first approach
                             was used for building the application.
                         </p>
-                        <img src="\public\erd.png" className="img-fluid" alt="Entity Relationship Diagram"></img>
+                        <img src="/erd.png" className="img-fluid" alt="Entity Relationship Diagram"></img>
                     </div>
                 </main>
             </div>
