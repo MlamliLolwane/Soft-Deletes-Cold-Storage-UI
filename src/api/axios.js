@@ -8,9 +8,9 @@ const headers = {
 let baseURI = '';
 
 if (import.meta.env.MODE === 'development') {
-  baseURI = 'http://localhost:8000'; // ✅ Remove `/api` here
+  baseURI = 'http://localhost:8000'; //
 } else if (import.meta.env.MODE === 'production') {
-  baseURI = 'https://admin-api.bigodeals.net'; // ✅ Remove `/api` here too
+  baseURI = 'https://lynkly.bigodeals.net'; // 
 }
 
 const apiClient = axios.create({
