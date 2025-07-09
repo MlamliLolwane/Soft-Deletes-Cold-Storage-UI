@@ -10,7 +10,7 @@ let baseURI = '';
 if (import.meta.env.MODE === 'development') {
   baseURI = 'http://localhost:8000'; //
 } else if (import.meta.env.MODE === 'production') {
-  baseURI = 'https://lynkly.bigodeals.net'; // 
+  baseURI = 'https://soft-deletes-cold-storage-api-production.up.railway.app'; // 
 }
 
 const apiClient = axios.create({
