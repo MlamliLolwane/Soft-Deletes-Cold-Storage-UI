@@ -13,7 +13,7 @@ function AddTask() {
         e.preventDefault();
 
         try {
-            const response = await apiClient.post('http://localhost:8000/api/task', {
+            const response = await apiClient.post('/api/task', {
                 task_title: title,
                 task_definition: definition,
                 status_id: 1,
