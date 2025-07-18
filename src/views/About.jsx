@@ -10,7 +10,7 @@ function About() {
                     <p className="fw-lighter">
                         Many developers debate whether using soft-deletes in a project is good or bad. My point of view is that
                         like all the other concepts in software development, there are no silver bullets... we use what we gotta use when
-                        we have to use them. <br/><br/>
+                        we have to use them. <br/><br/> 
                         This project demonstrates the implementation and benefits of soft deletes in modern web applications. Rather 
                         than permanently removing data from the database, soft deletes allow records to be marked as deleted while 
                         still retaining them for future reference, recovery, or auditing purposes.<br<br/>
