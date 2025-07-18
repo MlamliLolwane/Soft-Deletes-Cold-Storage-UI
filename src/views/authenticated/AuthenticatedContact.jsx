@@ -23,7 +23,7 @@ function AuthenticatedContact() {
                         </p>
 
                         <p className="fw-lighter">
-                            <i class="bi bi-telephone-forward-fill"></i> Call: <u> 072 9252 248 </u> / <u> 067 1974 979 </u>
+                            <i class="bi bi-telephone-forward-fill"></i> Call: <u> 067 197 4979 </u> / <u> 072 1997 807 </u>
                         </p>
 
                         <p className="fw-lighter">
