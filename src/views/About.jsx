@@ -13,7 +13,7 @@ function About() {
                         we have to use them. <br/><br/> 
                         This project demonstrates the implementation and benefits of soft deletes in modern web applications. Rather 
                         than permanently removing data from the database, soft deletes allow records to be marked as deleted while 
-                        still retaining them for future reference, recovery, or auditing purposes.<br<br/>
+                        still retaining them for future reference, recovery, or auditing purposes.<br/> <br/>
                         A simple to do application was used to demonstrate this where by users can create a task. After that the task
                         can be soft-deleted and will be sent to the "Trash". While the record is in the "Trash" it can then be permanently 
                         deleted which will not delete the task right away but after a specified amount of time to avoid loss of data in case
