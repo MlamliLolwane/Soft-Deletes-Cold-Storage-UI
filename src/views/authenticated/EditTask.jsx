@@ -16,7 +16,7 @@ function EditTask() {
         e.preventDefault();
 
         try {
-            const response = await apiClient.put(`http://localhost:8000/api/task/${task.id}`, {
+            const response = await apiClient.put(`/api/task/${task.id}`, {
                 task_title: title,
                 task_definition: definition,
                 status_id: task.status_id,
