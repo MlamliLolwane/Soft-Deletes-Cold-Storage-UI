@@ -11,7 +11,7 @@ function ShowTrashedTask() {
         e.preventDefault();
 
         try {
-            const response = await apiClient.put(`http://localhost:8000/api/task/status/${task.id}`, {
+            const response = await apiClient.put(`/api/task/status/${task.id}`, {
                 status_id: status
             });
 
