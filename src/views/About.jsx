@@ -8,9 +8,16 @@ function About() {
                 <div className="border m-5 p-4">
                     <h4>About</h4>
                     <p className="fw-lighter">
-                        This project is a simple to do application where by users can create a to do item by inputing the
-                        title of the task they have to complete and then add a description as well. Then users can mark the
-                        status of the task (Complete / Cancelled).
+                        Many developers debate whether using soft-deletes in a project is good or bad. My point of view is that
+                        like all the other concepts in software development, there are no silver bullets... we use what we gotta use when
+                        we have to use them.
+                        This project demonstrates the implementation and benefits of soft deletes in modern web applications. Rather 
+                        than permanently removing data from the database, soft deletes allow records to be marked as deleted while 
+                        still retaining them for future reference, recovery, or auditing purposes.<br/>
+                        A simple to do application was used to demonstrate this where by users can create a task. After that the task
+                        can be soft-deleted and will be sent to the "Trash". While the record is in the "Trash" it can then be permanently 
+                        deleted which will not delete the task right away but after a specified amount of time to avoid loss of data in case
+                        a malicious user is the one initiating the delete event and thus the record can be recovered.
                     </p>
                     <h6>Technologies Used</h6>
                     <p className="fw-lighter">
